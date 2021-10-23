@@ -19,6 +19,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'wtf.emulator.gradle'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -72,6 +73,14 @@ android {
     testOptions {
         execution 'ANDROIDX_TEST_ORCHESTRATOR'
     }
+}
+
+emulatorwtf {
+    numShards = 10
+    environmentVariables = [size: 'medium']
+    devices = [
+        [model: "NexusLowRes", version: 30, atd: true]
+    ]
 }
 
 dependencies {
