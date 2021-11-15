@@ -18,7 +18,7 @@ buildscript {
     // Define versions in a single place
     ext {
         // Sdk and tools
-        compileSdkVersion = 30
+        compileSdkVersion = 31
         minSdkVersion = 21
         targetSdkVersion = 30
 
@@ -41,7 +41,7 @@ buildscript {
         materialVersion = '1.2.0'
         navigationVersion = '2.3.3'
         okhttpLoggingVersion = '4.7.2'
-        orchestrator = '1.4.0'
+        orchestrator = '1.4.1-beta01'
         pagingVersion = '3.0.1'
         retrofitVersion = '2.9.0'
         roomVersion = '2.2.5'
@@ -51,7 +51,7 @@ buildscript {
         truthVersion = '0.42'
         uiAutomatorVersion = '2.2.0'
         viewPagerVersion = '1.0.0'
-        workVersion = '2.6.0'
+        workVersion = '2.7.0'
     }
 
     repositories {
