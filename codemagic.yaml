@@ -8,7 +8,7 @@ workflows:
                 - tag
                 - pull_request
             branch_patterns:
-                - pattern: master
+                - pattern: main
                   include: true
                   source: true
         scripts:
