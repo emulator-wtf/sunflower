@@ -6,7 +6,7 @@ sunflower:
   environment-variables:
     clear-package-data: true
   device:
-    model: Pixel2
+  - model: Pixel2
     version: 27
 
 sunflower-medium:
