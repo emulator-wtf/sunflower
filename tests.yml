@@ -4,7 +4,7 @@ sunflower:
   use-orchestrator: true
   timeout: 1h
   environment-variables:
-    clear-package-data: true
+    clear-package-data: 'true'
   device:
   - model: Pixel2
     version: 27
@@ -13,4 +13,4 @@ sunflower-medium:
   include: [sunflower]
   environment-variables:
     size: medium
-    clear-package-data: true
+    clear-package-data: 'true'
