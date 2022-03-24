@@ -1,6 +1,9 @@
 workflows:
   native-android:
     name: Native Android
+    environment:
+      groups:
+        - EMULATORWTF
     instance_type: mac_mini
     max_build_duration: 120
     triggering:
@@ -28,7 +31,7 @@ workflows:
           chmod a+x ew-cli
       - name: Test
         script: |
-          ./ew-cli tests.yml:sunflower-medium --outputs-dir results
+          ./ew-cli tests.yml:sunflower-medium --outputs-dir results --num-shards 10
         test_report: results/**/*.xml
     artifacts:
       - app/build/outputs/**/*.apk
