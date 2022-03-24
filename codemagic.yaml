@@ -22,14 +22,13 @@ workflows:
       - name: Build Android test APK
         script: |
           ./gradlew assembleAndroidTest
-      - name: Setup Firebase Test Lab
+      - name: Setup emulator.wtf
         script: |
-          set -ex
-          echo $GCLOUD_KEY_FILE > ./gcloud_key_file.json
-          gcloud auth activate-service-account --key-file=gcloud_key_file.json
-          gcloud --quiet config set project $FIREBASE_PROJECT
+          curl https://maven.emulator.wtf/releases/ew-cli -o ew-cli
+          chmod a+x ew-cli
       - name: Test
         script: |
-          gcloud firebase test android run tests.yml:sunflower-medium
+          ./ew-cli tests.yml:sunflower-medium --outputs-dir results
+        test_report: results/**/*.xml
     artifacts:
       - app/build/outputs/**/*.apk
