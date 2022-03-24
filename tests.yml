@@ -2,8 +2,9 @@ sunflower:
   app: app/build/outputs/apk/debug/app-debug.apk
   test: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
   use-orchestrator: true
-  clear-package-data: true
   timeout: 1h
+  environment-variables:
+    clear-package-data: true
   device:
     model: Pixel2
     version: 27
@@ -12,3 +13,4 @@ sunflower-medium:
   include: [sunflower]
   environment-variables:
     size: medium
+    clear-package-data: true
