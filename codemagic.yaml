@@ -22,22 +22,14 @@ workflows:
       - name: Build Android test APK
         script: |
           ./gradlew assembleAndroidTest
-      - name: Launch emulator
+      - name: Setup Firebase Test Lab
         script: |
-          cd $ANDROID_HOME/tools
-          emulator -avd emulator &
-          adb wait-for-device
-          adb shell getprop > emulator.props.txt
+          set -ex
+          echo $GCLOUD_KEY_FILE > ./gcloud_key_file.json
+          gcloud auth activate-service-account --key-file=gcloud_key_file.json
+          gcloud --quiet config set project $FIREBASE_PROJECT
       - name: Test
         script: |
-          set -e
-          adb install -r ./app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
-          adb install -r ./app/build/outputs/apk/debug/app-debug.apk
-          adb install -r ./orchestrator-1.4.1.apk
-          adb install -r ./test-services-1.4.1.apk
-          adb shell 'CLASSPATH=$(pm path androidx.test.services)' app_process / androidx.test.services.shellexecutor.ShellMain am instrument -r -w -e size medium -e clearPackageData true -e debug false -e targetInstrumentation com.google.samples.apps.sunflower.test/com.google.samples.apps.sunflower.utilities.MainTestRunner androidx.test.orchestrator/androidx.test.orchestrator.AndroidTestOrchestrator
-          adb logcat -d > emulator.log
+          gcloud firebase test android run tests.yml:sunflower-medium
     artifacts:
       - app/build/outputs/**/*.apk
-      - emulator.log
-      - emulator.props.txt
