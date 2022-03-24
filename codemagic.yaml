@@ -1,6 +1,9 @@
 workflows:
   native-android:
     name: Native Android
+    environment:
+      groups:
+        - FTL
     instance_type: mac_mini
     max_build_duration: 120
     triggering:
@@ -30,6 +33,6 @@ workflows:
           gcloud --quiet config set project $FIREBASE_PROJECT
       - name: Test
         script: |
-          gcloud firebase test android run tests.yml:sunflower-medium
+          gcloud alpha firebase test android run tests.yml:sunflower-medium --num-uniform-shards 10
     artifacts:
       - app/build/outputs/**/*.apk
