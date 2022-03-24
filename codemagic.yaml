@@ -33,6 +33,6 @@ workflows:
           gcloud --quiet config set project $FIREBASE_PROJECT
       - name: Test
         script: |
-          gcloud firebase test android run tests.yml:sunflower-medium
+          gcloud alpha firebase test android run tests.yml:sunflower-medium --num-uniform-shards 10
     artifacts:
       - app/build/outputs/**/*.apk
