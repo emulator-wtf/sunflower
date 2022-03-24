@@ -31,7 +31,7 @@ workflows:
           chmod a+x ew-cli
       - name: Test
         script: |
-          ./ew-cli tests.yml:sunflower-medium --outputs-dir results --num-shards 10
+          ./ew-cli tests.yml:sunflower-medium --outputs-dir results
         test_report: results/**/*.xml
     artifacts:
       - app/build/outputs/**/*.apk
