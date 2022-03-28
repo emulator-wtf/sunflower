@@ -25,13 +25,8 @@ workflows:
       - name: Build Android test APK
         script: |
           ./gradlew assembleAndroidTest
-      - name: Setup emulator.wtf
-        script: |
-          curl https://maven.emulator.wtf/releases/ew-cli -o ew-cli
-          chmod a+x ew-cli
       - name: Test
-        script: |
-          ./ew-cli tests.yml:sunflower-medium --outputs-dir results
+        script: ew-cli tests.yml:sunflower-medium --outputs-dir results
         test_report: results/**/*.xml
     artifacts:
       - app/build/outputs/**/*.apk
