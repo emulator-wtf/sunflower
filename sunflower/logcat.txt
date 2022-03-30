@@ -1,0 +1,298 @@
+--------- beginning of main
+12-13 21:20:50.246  2326  2576 I Icing   : Indexing done com.google.android.gms-apps
+12-13 21:20:50.344  3326  3326 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+12-13 21:20:50.344  3326  3326 D AndroidRuntime: CheckJNI is OFF
+12-13 21:20:50.352  3326  3326 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-13 21:20:50.361  3326  3326 E memtrack: Couldn't load memtrack module (No such file or directory)
+12-13 21:20:50.361  3326  3326 E android.os.Debug: failed to load memtrack module: -2
+12-13 21:20:50.361  3326  3326 I Radio-JNI: register_android_hardware_Radio DONE
+12-13 21:20:50.371  3326  3326 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-13 21:20:50.376  1594  2003 I ActivityManager: Force stopping com.google.samples.apps.sunflower appid=10063 user=0: start instr
+12-13 21:20:50.379  3336  3336 I art     : Late-enabling -Xcheck:jni
+12-13 21:20:50.387  1594  2003 I ActivityManager: Start proc 3336:com.google.samples.apps.sunflower/u0a63 for added application com.google.samples.apps.sunflower
+12-13 21:20:50.390  3336  3336 W System  : ClassLoader referenced unknown path: /data/app/com.google.samples.apps.sunflower.test-1/lib/x86
+12-13 21:20:50.390  3336  3336 W System  : ClassLoader referenced unknown path: /data/app/com.google.samples.apps.sunflower-1/lib/x86
+12-13 21:20:50.395  3336  3336 I MultiDex: VM with version 2.1.0 has multidex support
+12-13 21:20:50.395  3336  3336 I MultiDex: Installing application
+12-13 21:20:50.395  3336  3336 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+12-13 21:20:50.400  3336  3336 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+12-13 21:20:50.410  3336  3336 I MonitoringInstr: Instrumentation started!
+12-13 21:20:50.421  3336  3336 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+12-13 21:20:50.424  3336  3336 I MonitoringInstr: No JSBridge.
+12-13 21:20:50.426  3336  3350 I UsageTrackerFacilitator: Usage tracking enabled
+12-13 21:20:50.439  3336  3350 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+12-13 21:20:50.439  3336  3350 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+12-13 21:20:50.439  3336  3350 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+12-13 21:20:50.439  3336  3350 D TestExecutor: Adding listener androidx.test.internal.runner.listener.CoverageListener
+12-13 21:20:50.441  3336  3350 I TestRunner: run started: 1 tests
+12-13 21:20:50.441  3336  3350 I TestRunner: started: addAll_1(com.google.samples.apps.sunflower.stresstest.AddAll1)
+12-13 21:20:50.450  3336  3350 W System.err: java.io.FileNotFoundException: /jacoco.exec: open failed: EROFS (Read-only file system)
+12-13 21:20:50.451  3336  3350 W System.err: 	at libcore.io.IoBridge.open(IoBridge.java:452)
+12-13 21:20:50.451  3336  3350 W System.err: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.jacoco.agent.rt.internal_8ff85ea.output.FileOutput.openFile(FileOutput.java:67)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.jacoco.agent.rt.internal_8ff85ea.output.FileOutput.startup(FileOutput.java:49)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.jacoco.agent.rt.internal_8ff85ea.Agent.startup(Agent.java:122)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.jacoco.agent.rt.internal_8ff85ea.Agent.getInstance(Agent.java:50)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.jacoco.agent.rt.internal_8ff85ea.Offline.<clinit>(Offline.java:31)
+12-13 21:20:50.451  3336  3350 W System.err: 	at com.google.samples.apps.sunflower.data.Plant.$jacocoInit(Plant.kt)
+12-13 21:20:50.451  3336  3350 W System.err: 	at com.google.samples.apps.sunflower.data.Plant.getName(Plant.kt)
+12-13 21:20:50.451  3336  3350 W System.err: 	at com.google.samples.apps.sunflower.stresstest.BaseStressTest$$special$$inlined$sortedBy$1.compare(Comparisons.kt:321)
+12-13 21:20:50.451  3336  3350 W System.err: 	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:320)
+12-13 21:20:50.451  3336  3350 W System.err: 	at java.util.TimSort.sort(TimSort.java:185)
+12-13 21:20:50.451  3336  3350 W System.err: 	at java.util.TimSort.sort(TimSort.java:169)
+12-13 21:20:50.451  3336  3350 W System.err: 	at java.util.Arrays.sort(Arrays.java:2010)
+12-13 21:20:50.451  3336  3350 W System.err: 	at kotlin.collections.ArraysKt___ArraysJvmKt.sortWith(_ArraysJvm.kt:2557)
+12-13 21:20:50.451  3336  3350 W System.err: 	at kotlin.collections.CollectionsKt___CollectionsKt.sortedWith(_Collections.kt:1073)
+12-13 21:20:50.451  3336  3350 W System.err: 	at com.google.samples.apps.sunflower.stresstest.BaseStressTest.<init>(BaseStressTest.kt:113)
+12-13 21:20:50.451  3336  3350 W System.err: 	at com.google.samples.apps.sunflower.stresstest.AddAll1.<init>(AddAll1.kt:9)
+12-13 21:20:50.451  3336  3350 W System.err: 	at java.lang.reflect.Constructor.newInstance(Native Method)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:250)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:260)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.BlockJUnit4ClassRunner$2.runReflectiveCall(BlockJUnit4ClassRunner.java:309)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:306)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+12-13 21:20:50.451  3336  3350 W System.err: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+12-13 21:20:50.451  3336  3350 W System.err: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+12-13 21:20:50.451  3336  3350 W System.err: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:444)
+12-13 21:20:50.451  3336  3350 W System.err: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+12-13 21:20:50.451  3336  3350 W System.err: Caused by: android.system.ErrnoException: open failed: EROFS (Read-only file system)
+12-13 21:20:50.451  3336  3350 W System.err: 	at libcore.io.Posix.open(Native Method)
+12-13 21:20:50.451  3336  3350 W System.err: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+12-13 21:20:50.451  3336  3350 W System.err: 	at libcore.io.IoBridge.open(IoBridge.java:438)
+12-13 21:20:50.451  3336  3350 W System.err: 	... 48 more
+12-13 21:20:50.455  3336  3350 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+12-13 21:20:50.457  1594  2112 I ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x14000000 cmp=com.google.samples.apps.sunflower/.GardenActivity} from uid 10063 on display 0
+12-13 21:20:50.466  3336  3336 D LifecycleMonitor: Lifecycle status change: com.google.samples.apps.sunflower.GardenActivity@f487af8 in: PRE_ON_CREATE
+12-13 21:20:50.467  3336  3336 W art     : Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+12-13 21:20:50.481  3336  3336 D LifecycleMonitor: Lifecycle status change: com.google.samples.apps.sunflower.GardenActivity@f487af8 in: CREATED
+12-13 21:20:50.489  1245  1996 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 921600
+12-13 21:20:50.506  1974  2139 D EGL_emulation: eglMakeCurrent: 0xab3a74e0: ver 3 0 (tinfo 0xada3a230)
+12-13 21:20:50.510  1974  2139 E Surface : getSlotFromBufferLocked: unknown buffer: 0xb40fd840
+12-13 21:20:50.514  3336  3336 D LifecycleMonitor: Lifecycle status change: com.google.samples.apps.sunflower.GardenActivity@f487af8 in: STARTED
+12-13 21:20:50.514  3336  3336 D LifecycleMonitor: Lifecycle status change: com.google.samples.apps.sunflower.GardenActivity@f487af8 in: RESUMED
+12-13 21:20:50.515  1245  1290 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+12-13 21:20:50.515  3336  3355 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+12-13 21:20:50.516  3336  3336 D         : HostConnection::get() New Host Connection established 0xab23f980, tid 3336
+12-13 21:20:50.540  3336  3355 D         : HostConnection::get() New Host Connection established 0xae45bc80, tid 3355
+12-13 21:20:50.542  3336  3355 I OpenGLRenderer: Initialized EGL, version 1.4
+12-13 21:20:50.543  3336  3355 D EGL_emulation: eglCreateContext: 0xab2036e0: maj 3 min 0 rcv 3
+12-13 21:20:50.543  3336  3355 D EGL_emulation: eglMakeCurrent: 0xab2036e0: ver 3 0 (tinfo 0xada3a080)
+12-13 21:20:50.544  3336  3355 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+12-13 21:20:50.544  3336  3355 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+12-13 21:20:50.545  1245  2202 D         : HostConnection::get() New Host Connection established 0xb657c300, tid 2202
+12-13 21:20:50.546  3336  3355 D EGL_emulation: eglMakeCurrent: 0xab2036e0: ver 3 0 (tinfo 0xada3a080)
+12-13 21:20:50.901  1594  1613 I ActivityManager: Displayed com.google.samples.apps.sunflower/.GardenActivity: +439ms
+12-13 21:20:50.917  3336  3350 D InputManagerEventInjectionStrategy: Creating injection strategy with input manager.
+12-13 21:20:50.920  3336  3352 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=97f6354b-1583-436d-99de-672ba866be86, tags={ com.google.samples.apps.sunflower.workers.SeedDatabaseWorker } ]
+12-13 21:20:50.926  3336  3336 I ViewInteraction: Performing 'single click' action on view with string from resource id: <2131755108>[plant_list_title] value: Plant list
+12-13 21:20:50.978  1594  1649 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client; transfer 4, track 48000 Hz, output 44100 Hz
+12-13 21:20:51.016  3336  3336 W Glide   : Failed to find GeneratedAppGlideModule. You should include an annotationProcessor compile dependency on com.github.bumptech.glide:compiler in your application and a @GlideModule annotated AppGlideModule implementation or LibraryGlideModules will be silently ignored
+12-13 21:20:52.136  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 0' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:20:52.840  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Apple"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:20:52.841  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:52.842  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:52.952  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(5)
+12-13 21:20:53.177  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:20:53.387  2326  3279 I Vision  : Requesting optional module download of ocr.
+12-13 21:20:53.387  2326  3279 I Vision  : Exceeded maximum feature download tries for ocr
+12-13 21:20:53.387  2326  3279 W Vision  : Request of optional module download of ocr failed.
+12-13 21:20:53.387  2326  3279 I Vision  : Checking for download completion for 188422 -- ocr
+12-13 21:20:53.563  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:20:53.564  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 1' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:20:53.721  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(16)
+12-13 21:20:54.215  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Avocado"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:20:54.215  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:54.216  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:54.516  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:20:54.905  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:20:54.905  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 2' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:20:55.050  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(15)
+12-13 21:20:55.578  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Beet"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:20:55.578  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:55.579  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:55.881  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:20:56.275  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:20:56.276  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 3' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:20:56.397  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(9)
+12-13 21:20:56.959  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Bougainvillea"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:20:56.960  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:56.961  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:57.073  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(11)
+12-13 21:20:57.265  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:20:57.649  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:20:57.649  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 4' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:20:58.333  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Cilantro"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:20:58.334  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:58.335  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:58.636  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:20:59.024  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:20:59.025  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 5' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:20:59.494  1594  2188 D AlarmManagerService: Kernel timezone updated to -60 minutes west of GMT
+12-13 21:20:59.495  1594  2929 D AlarmManagerService: Setting time of day to sec=1639426859
+12-13 21:20:59.001  1594  2929 W AlarmManagerService: Unable to set rtc to 1639426859: No such device
+12-13 21:20:59.217  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Eggplant"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:20:59.217  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:59.218  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:20:59.520  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:20:59.916  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:20:59.921  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 6' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:20:59.926  1594  1632 I InputReader: Reconfiguring input devices.  changes=0x00000010
+12-13 21:20:59.937  1938  3387 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.samples.apps.sunflower flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+12-13 21:20:59.939  1938  3386 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+12-13 21:20:59.942  2954  3382 I UpdateIcingCorporaServi: Updating corpora: APPS=com.google.samples.apps.sunflower, CONTACTS=MAYBE
+12-13 21:20:59.952  2954  3382 I UpdateIcingCorporaServi: UpdateCorporaTask done [took 9 ms] updated apps [took 9 ms] 
+12-13 21:20:59.990  2326  2651 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+12-13 21:20:59.992  2326  2599 W Icing   : No valid account for uploading user actions
+12-13 21:20:59.995  2326  2702 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+12-13 21:21:00.003  2326  2599 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+12-13 21:21:00.011  2326  2599 W Icing   : No valid account for uploading user actions
+12-13 21:21:00.016  2326  2599 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+12-13 21:21:00.016  2326  2599 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms using seqno 87
+12-13 21:21:00.019  2326  2599 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+12-13 21:21:00.050  2326  2599 I Icing   : Indexing done com.google.android.gms-apps
+12-13 21:21:00.609  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Grape"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:00.610  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:00.611  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:00.721  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(5)
+12-13 21:21:00.911  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:01.298  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:01.299  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 7' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:01.437  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(9)
+12-13 21:21:02.118  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Hibiscus"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:02.118  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:02.119  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:02.229  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(11)
+12-13 21:21:02.420  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:02.896  2326  3383 I Vision  : Requesting optional module download of ocr.
+12-13 21:21:02.897  2326  3383 I Vision  : Checking for download completion for 198426 -- ocr
+12-13 21:21:02.898  2326  3381 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+12-13 21:21:02.898  2326  3381 I ChmraDebugLogger: [80] null
+12-13 21:21:03.716  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:03.716  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 8' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:04.166  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(9)
+12-13 21:21:04.702  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Mango"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:04.703  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:04.703  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:04.813  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(5)
+12-13 21:21:05.018  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:05.395  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:05.395  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 9' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:06.162  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Orange"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:06.163  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:06.164  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:06.279  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(8)
+12-13 21:21:06.463  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:06.853  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:06.854  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 10' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:07.554  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Pear"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:07.555  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:07.555  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:07.668  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(5)
+12-13 21:21:07.859  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:08.244  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:08.245  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 11' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:08.914  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Pink & White Lady's Slipper"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:08.915  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:08.916  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:09.035  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(2)
+12-13 21:21:09.215  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:09.619  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:09.620  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 12' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:09.775  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(6)
+12-13 21:21:10.327  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Rocky Mountain Columbine"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:10.328  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:10.329  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:10.443  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(11)
+12-13 21:21:10.632  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:11.021  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:11.022  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 13' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:11.688  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Sunflower"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:11.689  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:11.690  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:11.990  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:12.378  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:12.379  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 14' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:12.478  1245  1296 D hwcomposer: hw_composer sent 952 syncs in 60s
+12-13 21:21:12.900  2326  3393 I Vision  : Requesting optional module download of ocr.
+12-13 21:21:12.900  2326  3393 I Vision  : Checking for download completion for 208429 -- ocr
+12-13 21:21:13.081  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Tomato"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:13.082  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:13.082  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:13.200  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(5)
+12-13 21:21:13.384  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:13.770  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:13.771  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 15' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:14.490  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Watermelon"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:14.491  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:14.492  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:14.793  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:15.181  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:15.182  3336  3336 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 16' action on view with id: com.google.samples.apps.sunflower:id/plant_list
+12-13 21:21:15.883  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=with text: is "Yulan Magnolia"}' assertion on view with id: com.google.samples.apps.sunflower:id/plant_detail_name
+12-13 21:21:15.884  3336  3336 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:15.885  3336  3336 I ViewInteraction: Performing 'single click' action on view with id: com.google.samples.apps.sunflower:id/fab
+12-13 21:21:16.002  1328  1655 D AudioFlinger: mixer(0xb4380000) throttle end: throttle time(5)
+12-13 21:21:16.184  3336  3336 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view is a root view.
+12-13 21:21:16.574  3336  3336 E KeyEventActionBase: Back was pressed but there was no Activity stage transition in 150ms, possibly due to a delay calling super.onBackPressed() from your Activity.
+12-13 21:21:16.576  1245  2202 D PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (97 us)
+12-13 21:21:16.576  1245  2202 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 147456
+12-13 21:21:16.577  1594  1605 D         : HostConnection::get() New Host Connection established 0xa0879700, tid 1605
+12-13 21:21:16.614  3336  3336 D LifecycleMonitor: Lifecycle status change: com.google.samples.apps.sunflower.GardenActivity@f487af8 in: PAUSED
+12-13 21:21:16.616  3336  3336 D LifecycleMonitor: Lifecycle status change: com.google.samples.apps.sunflower.GardenActivity@f487af8 in: STOPPED
+12-13 21:21:16.617  3336  3336 D LifecycleMonitor: Lifecycle status change: com.google.samples.apps.sunflower.GardenActivity@f487af8 in: DESTROYED
+12-13 21:21:16.618  3336  3355 D EGL_emulation: eglMakeCurrent: 0xab2036e0: ver 3 0 (tinfo 0xada3a080)
+12-13 21:21:16.618  3336  3355 E Surface : getSlotFromBufferLocked: unknown buffer: 0xb40fdde0
+12-13 21:21:16.618  3336  3350 I TestRunner: finished: addAll_1(com.google.samples.apps.sunflower.stresstest.AddAll1)
+12-13 21:21:16.625  3336  3350 I TestRunner: run finished: 1 tests, 0 failed, 0 ignored
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: Failed to generate Emma/JaCoCo coverage. 
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: java.lang.reflect.InvocationTargetException
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at java.lang.reflect.Method.invoke(Native Method)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at androidx.test.internal.runner.coverage.InstrumentationCoverageReporter.generateCoverageInternal(InstrumentationCoverageReporter.java:216)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at androidx.test.internal.runner.coverage.InstrumentationCoverageReporter.dumpCoverageToFile(InstrumentationCoverageReporter.java:112)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at androidx.test.internal.runner.coverage.InstrumentationCoverageReporter.generateCoverageReport(InstrumentationCoverageReporter.java:90)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at androidx.test.internal.runner.listener.CoverageListener.instrumentationRunFinished(CoverageListener.java:89)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at androidx.test.internal.runner.TestExecutor.reportRunEnded(TestExecutor.java:92)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:65)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:444)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: Caused by: java.io.FileNotFoundException: /data/data/com.google.samples.apps.sunflower/files/warp-coverage/coverage.ec: open failed: EACCES (Permission denied)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at libcore.io.IoBridge.open(IoBridge.java:452)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at com.vladium.emma.rt.RT.dumpCoverageData(RT.java:50)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	... 9 more
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at libcore.io.Posix.open(Native Method)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	at libcore.io.IoBridge.open(IoBridge.java:438)
+12-13 21:21:16.626  3336  3350 E InstrumentationCoverageReporter: 	... 11 more
+12-13 21:21:16.626  3336  3350 W InstrumentationCoverageReporter: Failed to generate the coverage data file. Please refer to the instrumentation result for more info.
+12-13 21:21:16.626  3336  3350 D InstrumentationCoverageReporter: Coverage file was generated to /data/data/com.google.samples.apps.sunflower/files/warp-coverage/coverage.ec
+12-13 21:21:16.621  3350  3350 W .MainTestRunner: type=1400 audit(0.0:24): avc: denied { search } for name="files" dev="dm-0" ino=115617 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0 tclass=dir permissive=0
+12-13 21:21:16.643  1974  2139 D EGL_emulation: eglMakeCurrent: 0xab3a74e0: ver 3 0 (tinfo 0xada3a230)
+12-13 21:21:16.706  3336  3350 I MonitoringInstr: waitForActivitiesToComplete() took: 0ms
+12-13 21:21:16.706  3326  3326 D AndroidRuntime: Shutting down VM
+12-13 21:21:16.706  1594  1727 I ActivityManager: Force stopping com.google.samples.apps.sunflower appid=10063 user=0: finished inst
+12-13 21:21:16.706  1594  1727 I ActivityManager: Killing 3336:com.google.samples.apps.sunflower/u0a63 (adj 0): stop com.google.samples.apps.sunflower
+12-13 21:21:16.763  1594  2108 D GraphicsStats: Buffer count: 2
