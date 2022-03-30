@@ -4,7 +4,7 @@ workflows:
     environment:
       groups:
         - EMULATORWTF
-    instance_type: mac_mini
+    instance_type: mac_pro
     max_build_duration: 120
     triggering:
       events:
@@ -19,14 +19,18 @@ workflows:
       - name: Set Android SDK location
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/local.properties"
-      - name: Build Android debug APK
+      - name: Run ew-cli --help
         script: |
-          ./gradlew assembleDebug
-      - name: Build Android test APK
-        script: |
-          ./gradlew assembleAndroidTest
-      - name: Test
-        script: ew-cli tests.yml:sunflower-medium --outputs-dir results
-        test_report: results/**/*.xml
+#      - name: Build Android debug and test APKs
+#        script: |
+#          ./gradlew assembleDebug assembleAndroidTest
+#      - name: Setup emulator.wtf
+#        script: |
+#          curl https://maven.emulator.wtf/releases/ew-cli -o ew-cli
+#          chmod a+x ew-cli
+#      - name: Test
+#        script: ew-cli tests.yml:sunflower-medium --outputs-dir results
+#        test_report: results/**/*.xml
+>>>>>>> temp: run only ew-cli --help
     artifacts:
       - app/build/outputs/**/*.apk
