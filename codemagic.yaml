@@ -20,7 +20,7 @@ workflows:
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/local.properties"
       - name: Run ew-cli --help
-        script: |
+        script: ew-cli --help
 #      - name: Build Android debug and test APKs
 #        script: |
 #          ./gradlew assembleDebug assembleAndroidTest
