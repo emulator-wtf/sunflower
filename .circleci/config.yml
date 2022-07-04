@@ -26,6 +26,7 @@ jobs:
           clear_package_data: true
           environment_variables: size=medium
           outputs_dir: /tmp/test/outputs
+          num_shards: 10
       - store_test_results:
           path: /tmp/test/outputs
 
