@@ -27,7 +27,7 @@ jobs:
           environment_variables: size=medium
           outputs_dir: /tmp/test/outputs
       - store_test_results:
-        path: /tmp/test/outputs
+          path: /tmp/test/outputs
 
 workflows:
   test:
