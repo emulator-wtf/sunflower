@@ -20,12 +20,12 @@ jobs:
       - android/save-gradle-cache
       - android/save-build-cache
       - emulatorwtf/run-tests:
-        app: app/build/outputs/apk/debug/app-debug.apk
-        test: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
-        use_orchestrator: true
-        clear_package_data: true
-        environment_variables: size=medium
-        outputs_dir: /tmp/test/outputs
+          app: app/build/outputs/apk/debug/app-debug.apk
+          test: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+          use_orchestrator: true
+          clear_package_data: true
+          environment_variables: size=medium
+          outputs_dir: /tmp/test/outputs
       - store_test_results:
         path: /tmp/test/outputs
 
@@ -33,4 +33,5 @@ workflows:
   test:
     jobs:
       - test:
-        context: emulator-wtf
+          context:
+            - emulator-wtf
