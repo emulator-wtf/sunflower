@@ -6,11 +6,18 @@ orbs:
 jobs:
   test:
     executor:
-      name: android/android-machine
-      resource-class: large
-      tag: 2021.10.1
+      name: android/android-docker
+      resource-class: medium
+      tag: 2022.04.1
     steps:
       - checkout
+      - android/restore-gradle-cache
+      - android/restore-build-cache
+      - run:
+          name: Build apks
+          command: ./gradlew assembleDebug assembleAndroidTest
+      - android/save-gradle-cache
+      - android/save-build-cache
 
 workflows:
   test:
