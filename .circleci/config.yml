@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   android: circleci/android@2.1.2
-  emulatorwtf: emulator-wtf/run-tests@dev:alpha
+  emulatorwtf: emulator-wtf/run-tests@0.0.2
 
 jobs:
   test:
@@ -22,11 +22,11 @@ jobs:
       - emulatorwtf/run-tests:
           app: app/build/outputs/apk/debug/app-debug.apk
           test: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
-          use_orchestrator: true
-          clear_package_data: true
-          environment_variables: size=medium
-          outputs_dir: /tmp/test/outputs
-          num_shards: 10
+          use-orchestrator: true
+          clear-package-data: true
+          environment-variables: size=medium
+          outputs-dir: /tmp/test/outputs
+          num-shards: 10
       - store_test_results:
           path: /tmp/test/outputs
 
