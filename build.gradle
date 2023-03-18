@@ -57,6 +57,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
         maven { url "https://maven.emulator.wtf/releases/" }
     }
 
@@ -65,7 +66,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
-        classpath "wtf.emulator:gradle-plugin:0.0.6"
+        classpath "wtf.emulator:gradle-plugin:0.9.1"
     }
 }
 

@@ -32,7 +32,7 @@ fun bindImageFromUrl(view: ImageView, imageUrl: String?) {
     if (!imageUrl.isNullOrEmpty()) {
         Glide.with(view.context)
             .load(imageUrl)
-            .transition(DrawableTransitionOptions.withCrossFade())
+            .transition(DrawableTransitionOptions.withCrossFade().dontTransition())
             .into(view)
     }
 }

@@ -50,7 +50,7 @@ class PlantDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
+        println("navigated")
         val binding = DataBindingUtil.inflate<FragmentPlantDetailBinding>(
             inflater,
             R.layout.fragment_plant_detail,
